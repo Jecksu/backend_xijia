@@ -22,7 +22,7 @@ poetry install
 
 ## how to run
 
-Assuming that your computer has python3.10 or above installed, use the following command to run the program.
+Assuming that your computer has python3.12 or above installed, use the following command to run the program.
 
 ```
 poetry run python3 main.py
@@ -35,7 +35,7 @@ This NII processor allows you to apply various filters to NII files. Here's how 
 1. Basic usage:
    Specify the filters one after the other in the order you wish to process the image
    ```
-   python main.py --input <input_file.nii> --output <output_file.nii> --filter <filter1> <filter2> ...
+   poetry run python3 main.py --input <input_file.nii> --output <output_file.nii> --filter <filter1> <filter2> ...
    ```
 
     Available filters:
@@ -89,7 +89,7 @@ This NII processor allows you to apply various filters to NII files. Here's how 
 
 3. Example:
    ```
-   python main.py --input input.nii --output output.nii --filter blur resample --sigma 1.5 --spacing 1 1 1
+   poetry run python3 main.py --input input.nii --output output.nii --filter blur resample --sigma 1.5 --spacing 1 1 1
    ```
 
 This example applies a blur filter with sigma 1.5, followed by resampling with spacing 1x1x1.
